@@ -45,5 +45,5 @@ class MapMarker extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyALv9jcBOQVvqdv7LibM7JoxnAsDSH4uHw' // 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo' -> Development purpos only.
+  apiKey: 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo' //Development purpos only.
 })(MapMarker);
