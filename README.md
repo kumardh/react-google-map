@@ -10,17 +10,16 @@ Then gave a try to use JS API so that I could extend the solution whatever way I
 
 No Layer:
 
-![No](media/1.jpg)
+![No](media/1.JPG)
 
 Transit layer:
 
-![Transit](media/2.jpg)
+![Transit](media/2.JPG)
 
 Traffic layer:
 
-![Traffic](media/3.jpg)
+![Traffic](media/3.JPG)
 
 Bicycling layer:
 
-![Bicycling](media/4.jpg)
-
+![Bicycling](media/4.JPG)
