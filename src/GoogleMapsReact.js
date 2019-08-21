@@ -7,7 +7,7 @@ const mapStyles = {
   height: '50%',
 };
 
-class MapMarker extends Component {
+class GoogleMapsReact extends Component {
   constructor(props) {
     super(props);
 
@@ -46,4 +46,4 @@ class MapMarker extends Component {
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo' //Development purpos only.
-})(MapMarker);
+})(GoogleMapsReact);

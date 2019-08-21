@@ -7,25 +7,22 @@ class Map extends Component {
   }
 
   onScriptLoad() {
-    const map = new window.google.maps.Map(
-      document.getElementById(this.props.id),
-      this.props.options);
+    const map = new window.google.maps.Map(document.getElementById(this.props.id),this.props.options);
     this.props.onMapLoad(map)
   }
 
   componentDidMount() {
     if (!window.google) {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.src = `https://maps.google.com/maps/api/js?key=AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo`;
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-      // Below is important. 
-      //We cannot access google.maps until it's finished loading
-      s.addEventListener('load', e => {
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = `https://maps.google.com/maps/api/js?key=AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo`;
+      script.id = 'googleMaps';
+      document.body.appendChild(script);
+      script.addEventListener('load', e => {
         this.onScriptLoad()
       })
-    } else {
+    } 
+    else {
       this.onScriptLoad()
     }
   }
